@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Damian Fonds — Funded Trading for Nigerians</title>
+  <meta name="description" content="Damien Fonds is a polished demo prop-funding platform concept for Nigerian traders.">
+  <link rel="stylesheet" href="/assets/styles.css">
+</head>
+<body data-page="home">
+  <nav class="nav">
+    <div class="nav-inner">
+      <a class="brand" href="/">
+        <span class="brand-mark">DF</span>
+        <span>Damien Fonds</span>
+      </a>
+      <div class="nav-links">
+        <a href="/" data-nav="home">Home</a>
+        <a href="/challenges" data-nav="challenges">Challenges</a>
+        <a href="/leaderboard" data-nav="leaderboard">Leaderboard</a>
+        <a href="/dashboard" data-nav="dashboard">Dashboard</a>
+        <a href="/about" data-nav="about">About</a>
+      </div>
+      <div class="nav-actions">
+        <a class="btn btn-ghost" href="/auth">Log in</a>
+        <a class="btn btn-primary" href="/challenges">Get funded</a>
+      </div>
+    </div>
+  </nav>
+
+  <main>
+    <section class="hero site-shell">
+      <div class="hero-grid">
+        <div>
+          <span class="eyebrow reveal"><span class="pulse"></span> Damien Fonds</span>
+          <h1 class="reveal delay-1">A prop-funding stage built for <span class="accent">Naija traders.</span></h1>
+          <p class="lead reveal delay-2">Damien Fonds is a demo funding-pipeline experience: pick a challenge, pass the rules, track risk, and move toward payout review with a premium fintech feel.</p>
+          <div class="hero-actions reveal delay-3">
+            <a class="btn btn-primary" href="/challenges">Explore challenges</a>
+            <a class="btn btn-ghost" href="/dashboard">Preview trader dashboard</a>
+          </div>
+        </div>
+
+        <aside class="hero-card reveal delay-2" aria-label="Trading dashboard preview">
+          <div class="trading-panel">
+            <div class="panel-top">
+              <div>
+                <div class="tiny-label">Funded capital</div>
+                <div class="big-number">$50,000</div>
+              </div>
+              <span class="status-pill">Live demo</span>
+            </div>
+            <div class="chart-card">
+              <div class="tiny-label">Evaluation momentum</div>
+              <div class="chart" aria-hidden="true">
+                <div class="bar" style="height:42%"></div>
+                <div class="bar" style="height:58%"></div>
+                <div class="bar" style="height:50%"></div>
+                <div class="bar" style="height:72%"></div>
+                <div class="bar" style="height:66%"></div>
+                <div class="bar" style="height:88%"></div>
+                <div class="bar" style="height:78%"></div>
+                <div class="bar" style="height:96%"></div>
+              </div>
+            </div>
+            <div class="metric-grid">
+              <div class="metric-card"><span class="tiny-label">Split</span><strong>90%</strong></div>
+              <div class="metric-card"><span class="tiny-label">Target</span><strong>10%</strong></div>
+              <div class="metric-card"><span class="tiny-label">Max DD</span><strong>8%</strong></div>
+            </div>
+            <div class="mini-feed">
+              <div class="feed-line"><span>KYC placeholder</span><strong>Pending</strong></div>
+              <div class="feed-line"><span>Payout review</span><strong>Queued</strong></div>
+              <div class="feed-line"><span>Risk score</span><strong>Stable</strong></div>
+            </div>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <section class="section site-shell">
+      <div class="section-head">
+        <h2>Designed like a <span class="accent">serious desk.</span></h2>
+        <p>The site is multi-page and wired to demo API routes, so every visible placeholder has a backend target to replace later.</p>
+      </div>
+      <div class="feature-grid">
+        <article class="page-card" data-number="01">
+          <div class="icon">₦</div>
+          <h3>Local-first funding</h3>
+          <p>Naira-priced challenge cards, Nigerian city leaderboard, and payment provider placeholders for Paystack or Flutterwave.</p>
+        </article>
+        <article class="page-card" data-number="02">
+          <div class="icon">↗</div>
+          <h3>Evaluation flow</h3>
+          <p>Challenge selection, application capture, login shell, payout review copy, and risk-desk messaging.</p>
+        </article>
+        <article class="page-card" data-number="03">
+          <div class="icon">YD</div>
+          <h3>Fonding identity</h3>
+          <p>A fused Mayana + Damien brand direction with premium dark-fintech visuals and memorable gold/mint accents.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section site-shell">
+      <div class="split-band">
+        <div>
+          <span class="eyebrow"><span class="pulse"></span> Demo journey</span>
+          <h2>From challenge to payout queue.</h2>
+          <p class="lead">This is intentionally demo-ready, not production-complete. The README explains which frontend placeholders map to which backend APIs.</p>
+        </div>
+        <div class="steps">
+          <div class="step"><div class="step-num">1</div><div><strong>Choose capital</strong><p>Pull challenge plans from `/api/challenges`.</p></div></div>
+          <div class="step"><div class="step-num">2</div><div><strong>Submit details</strong><p>Send trader applications to `/api/applications`.</p></div></div>
+          <div class="step"><div class="step-num">3</div><div><strong>Track progress</strong><p>Render demo metrics from `/api/dashboard`.</p></div></div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer site-shell">
+    <div class="footer-inner">
+      <div>Damien Fonds demo. Built for presentation use.</div>
+      <div class="footer-links">
+        <a href="/challenges">Challenges</a>
+        <a href="/leaderboard">Leaderboard</a>
+        <a href="/about">Contact</a>
+      </div>
+    </div>
+  </footer>
+
+  <div id="global-notice" class="notice" role="status"></div>
+  <script src="/assets/app.js"></script>
+</body>
+</html>

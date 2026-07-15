@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Login — Damien Fonds</title>
+  <link rel="stylesheet" href="/assets/styles.css">
+</head>
+<body data-page="auth">
+  <nav class="nav">
+    <div class="nav-inner">
+      <a class="brand" href="/"><span class="brand-mark">DF</span><span>Damien Fonds</span></a>
+      <div class="nav-links">
+        <a href="/" data-nav="home">Home</a>
+        <a href="/challenges" data-nav="challenges">Challenges</a>
+        <a href="/leaderboard" data-nav="leaderboard">Leaderboard</a>
+        <a href="/dashboard" data-nav="dashboard">Dashboard</a>
+        <a href="/about" data-nav="about">About</a>
+      </div>
+      <div class="nav-actions"><a class="btn btn-primary" href="/challenges">Get funded</a></div>
+    </div>
+  </nav>
+
+  <main class="auth-wrap site-shell">
+    <form class="form-card auth-card reveal" data-endpoint="/api/auth/login" data-notice="#auth-notice">
+      <span class="eyebrow"><span class="pulse"></span> Secure portal placeholder</span>
+      <h2>Enter the trader room.</h2>
+      <p>Login posts to `/api/auth/login`. Replace demo-token logic with proper sessions, MFA, and password reset flows.</p>
+      <div class="form-grid">
+        <div class="field full"><label for="email">Email</label><input id="email" name="email" type="email" required placeholder="trader@example.com"></div>
+        <div class="field full"><label for="password">Password</label><input id="password" name="password" type="password" required placeholder="••••••••"></div>
+      </div>
+      <button class="btn btn-primary" type="submit" style="margin-top:16px">Log in to demo</button>
+      <div id="auth-notice" class="notice" role="status"></div>
+    </form>
+  </main>
+
+  <script src="/assets/app.js"></script>
+</body>
+</html>

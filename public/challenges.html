@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Challenges — Damien Fonds</title>
+  <link rel="stylesheet" href="/assets/styles.css">
+</head>
+<body data-page="challenges">
+  <nav class="nav">
+    <div class="nav-inner">
+      <a class="brand" href="/"><span class="brand-mark">DF</span><span>Damien Fonds</span></a>
+      <div class="nav-links">
+        <a href="/" data-nav="home">Home</a>
+        <a href="/challenges" data-nav="challenges">Challenges</a>
+        <a href="/leaderboard" data-nav="leaderboard">Leaderboard</a>
+        <a href="/dashboard" data-nav="dashboard">Dashboard</a>
+        <a href="/about" data-nav="about">About</a>
+      </div>
+      <div class="nav-actions"><a class="btn btn-ghost" href="/auth">Log in</a><a class="btn btn-primary" href="#apply">Apply</a></div>
+    </div>
+  </nav>
+
+  <main class="site-shell">
+    <section class="page-hero page-title">
+      <span class="eyebrow reveal"><span class="pulse"></span> API-powered plan cards</span>
+      <h1 class="reveal delay-1">Choose a funded-account lane.</h1>
+      <p class="lead reveal delay-2">Challenge cards are loaded from the backend placeholder. Buttons create a payment initialization placeholder.</p>
+    </section>
+
+    <section class="section">
+      <div id="challenge-cards" class="pricing-grid">
+        <article class="pricing-card"><span class="badge">Loading</span><h3>Fetching plans</h3><p>Waiting for `/api/challenges`.</p></article>
+      </div>
+      <div id="global-notice" class="notice" role="status"></div>
+    </section>
+
+    <section id="apply" class="section">
+      <div class="form-layout">
+        <div class="form-card">
+          <span class="eyebrow"><span class="pulse"></span> Application shell</span>
+          <h2>Tell the desk who you are.</h2>
+          <p>This form posts to `/api/applications`. Replace it with real onboarding, KYC, and account provisioning later.</p>
+        </div>
+        <form class="form-card" data-endpoint="/api/applications" data-notice="#application-notice">
+          <div class="form-grid">
+            <div class="field"><label for="name">Full name</label><input id="name" name="name" required placeholder="Ada Okoro"></div>
+            <div class="field"><label for="email">Email</label><input id="email" name="email" type="email" required placeholder="ada@example.com"></div>
+            <div class="field"><label for="city">City</label><input id="city" name="city" placeholder="Lagos"></div>
+            <div class="field">
+              <label for="challenge">Challenge</label>
+              <select id="challenge" name="challenge"><option>Lagos Starter</option><option>Abuja Growth</option><option>Naija Pro</option></select>
+            </div>
+            <div class="field full"><label for="experience">Trading experience</label><textarea id="experience" name="experience" placeholder="Briefly describe strategy, market, and risk style"></textarea></div>
+          </div>
+          <button class="btn btn-primary" type="submit" style="margin-top:16px">Submit demo application</button>
+          <div id="application-notice" class="notice" role="status"></div>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer site-shell"><div class="footer-inner"><div>Damien Fonds challenge demo.</div><div class="footer-links"><a href="/dashboard">Dashboard</a><a href="/leaderboard">Leaderboard</a></div></div></footer>
+  <script src="/assets/app.js"></script>
+</body>
+</html>
